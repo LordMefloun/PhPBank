@@ -13,4 +13,8 @@ class Auth {
         $_SESSION["AuthLogged"] = $user;
     }
 
+    public static function logOut(){
+        $_SESSION["AuthLogged"] = null;
+    }
+
 }

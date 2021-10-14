@@ -22,5 +22,6 @@ if (isset($_SESSION['username'])){
         <label for="">Password: </label><input type="password" name="pwd" id=""><br>
         <input type="submit" name="submit" value="Prihlasit">
     </form>
+    <p style="color:red"><?php if (isset($_GET['e'])) echo $_GET['e'];?></p>
 </body>
 </html>

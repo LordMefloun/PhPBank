@@ -14,7 +14,7 @@ if (isset($_POST["submit"])){
         header('location: ./../index.php');
     }
     else{
-        echo 'Neexistuje nebo spatne heslo ci jmeno';
+        header('location: ./../loginpage.php?e=Spatne udaje');
     }
 }
 ?>
